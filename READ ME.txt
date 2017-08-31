@@ -10,7 +10,7 @@ HTTP encoding: utf-8
 MySQL encoding: utf_general_ci
 
 Instruction:
-1) import mySql database on server
+1) import mySql database (file: "course.sql") on server
 2) copy project on your server
 3) link for project: http://garage/
 
