@@ -1,0 +1,256 @@
+/* 
+    Created on : 21.08.2017, 15:23:55
+    Author     : Олександр
+*/
+
+/*Устанавливает фон страницы*/
+body 
+{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#cfccc0,#aa520c) no-repeat;
+    overflow-x: hidden;
+    
+}
+
+/*Изменение установление размеров главного тега*/
+.main-block 
+{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+
+/*Параметры размещения Заголова страницы*/
+div.title-doc
+{
+    margin: 50px 0 50px 0;
+    text-align: center;
+}
+
+/*Удаление расстояния между элементамы заголовка*/
+div.title-doc h2, div.title-doc p
+{
+margin: 0;
+}
+
+/*Установление параметров отображения всех проэктов*/
+div[class^='all-project']
+{
+    margin: auto;
+    margin-bottom: 50px;
+    border: 2px solid grey;
+    border-radius: 0 0 20px 20px;
+    width: 600px;
+    background-color: white;
+}
+
+/*Устанавливает радиус заукругливания последнего задания*/
+div[class^='tasks']:nth-last-of-type(1)
+{
+       border-radius: 0 0 20px 20px;
+}
+
+/*Часть имени проэкта*/
+/*Устанавливает параметры отображения имени проэктов*/
+.project-name
+{
+     border-top: 2px solid #8bb2d3; 
+     outline: 2px solid #315589; 
+     background-color: #4979b7;
+     font-size: 18pt;
+     color: white;
+}
+
+/*Установление всех элементов имени проэкта в одну строку*/
+div.project-name div
+{
+    display: inline-block;
+    padding: 10px;  
+}
+
+/*Устанавливает размеры картинок (карандаша, корзины) в опциях проэкта*/
+.pan, .trash
+{
+    height: 20px;
+    width: 17px;
+}
+
+/*Устанавливает правую границу b и правый внутренный отступ тега с классом pan */
+.pan
+{
+    border-right: 2px solid #98b0d2;
+    padding-right: 10px;
+}
+
+/*Устанавливает левый внутренный отступ тега с классом trash */
+.trash
+{
+    padding-left: 8px;
+}
+
+/*Установление ширены тега, который включает имя проэкта*/
+div.project-title
+{
+    width: 400px;
+}
+
+/*Устанавливает размеры картинкы (Блокнота)*/
+.image 
+{
+width: 30px;
+height: 30px;
+}
+
+/*Часть дабавления задания*/
+/*Устанавливает цвет заднего фона и параметры ныжней страницы части включающей элементы для добавления заданий*/
+div.add-task
+{
+    background: #cecece;
+    border-bottom: 2px solid grey;
+}
+
+/*Устанавливает блоки части добавления заданий в строчно-блочные
+И устанавливает отступы между этими блоками*/
+.add-task div
+{
+padding: 10px;
+display: inline-block;
+margin: 0;
+}
+
+/*Устанавливает размеры плюса*/
+.image-plus
+{
+    width: 30px;
+}
+
+/*Устанавливает параметры отображения инпутов добавления заданий и проэктов*/
+input.text-add-task, input.text-add-project
+{
+    float: left;
+    height: 32px;
+    width: 390px;
+    border-top: 2px solid #707070;
+    text-align: center;
+}
+
+/*Устанавливает параметры отображения кнопок для добавления заданий и проэктов*/
+input.button-add-task, input.button-add-project
+{
+    height: 38px;
+    width: 125px;
+    border-radius: 0px 10px 10px 0px;
+    border: 2px solid #447557;
+    background: #588f6f;
+    color: white;
+    font-size: 16pt;
+}
+
+/*Часть вывода списка всех заданий*/
+/*Убирает рамку в первом задании*/
+.tasks > div:first-child
+{
+border: none;    
+}
+
+/*Устнавливает параметры отображения верхней рамки заданий и убирает внутренный отступ*/
+.part-task
+{
+border-top: 1px solid #e7ebea;
+padding: 0;
+}
+
+/*Устанавливает параметры отображения блоков задания*/
+.part-task div
+{
+    display: inline-block;
+    padding: 15px;
+    vertical-align:middle; /*Выравнивание по вертикали*/
+    font-size: 13pt;
+}
+
+/*Устанавливает параметры отображения правой граници блока включаещего чекбоксы*/
+.marks
+{
+    border-right: 1px solid #efdadf;
+
+}
+
+/*Устанавливает параметры отображения блока включающий имя заданий*/
+.task-name
+{
+    margin-left: 5px;
+    border-left: 1px solid #efdadf;
+    border-right: 1px solid #e7ebea;
+    width: 360px;
+}
+
+/*Устанавливает параметры отображения блока включающий опци заданий*/
+.task-option
+{
+    text-align: center;
+    width: 110px;
+}
+
+/*Устанавливает размер картинок опций заданий и правый внутреный отступ */
+.task-option img
+{
+    padding: 0 9px;
+    height: 15px;
+}
+
+/*Устанавливает параметры отображеия правой рамки первых двох картинок опций заданий*/
+.task-option :first-child img, .task-option :nth-child(2) img
+{
+   border-right: 1px solid #cccccc;
+}
+
+
+/*Добавление тодо листа*/
+/*Параметры отображения формы включающей кнопку добавления проэкта*/
+.form-add-todo-list
+{
+   text-align: center;
+   padding-top:10px;
+   padding-bottom: 50px;
+}
+
+/*Добавление проэкта*/
+/*Устанавливает внутренние отступы*/
+.add-project 
+{
+    padding: 20px;
+}
+
+/*Устанавливает параметры отображения инпутов изменения имени проэктов*/
+.text-update-project
+{
+    float: left;
+    height: 32px;
+    width: 390px;
+    border-top: 2px solid #707070;
+    text-align: center;
+}
+
+/*Устанавливает параметры отображения кнопок для изменения имени проэктов*/
+.button-update-project
+{
+    height: 38px;
+    width: 160px;
+    border-radius: 0px 10px 10px 0px;
+    border: 2px solid #447557;
+    background: #588f6f;
+    color: white;
+    font-size: 16pt;
+}
+
+/*Установление параметров отображения блока Copy*/
+.copy
+{
+    text-align: center;
+    color: white;
+    
+}

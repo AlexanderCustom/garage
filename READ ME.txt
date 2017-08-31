@@ -1,0 +1,19 @@
+Сервер: OpenServer
+JQuery: jquery-3.2.1
+PHP: version 5.6
+HTTP: Apache-2.4
+MySQL: version 5.5
+IDE: NetBeans IDE 8.2
+
+Кодировки: 
+HTTP сервер: utf-8
+MySQL сервер: utf_general_ci
+
+Instruction:
+1) import mySql database on server
+2) copy project on your server
+3) link for project: http://garage/
+
+TEST WAS MADE IN NEXT BROWSERS:
+Opera
+Google Chrome
