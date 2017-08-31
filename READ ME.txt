@@ -1,13 +1,13 @@
-Сервер: OpenServer
+Server: OpenServer
 JQuery: jquery-3.2.1
 PHP: version 5.6
 HTTP: Apache-2.4
 MySQL: version 5.5
 IDE: NetBeans IDE 8.2
 
-Кодировки: 
-HTTP сервер: utf-8
-MySQL сервер: utf_general_ci
+encoding: 
+HTTP encoding: utf-8
+MySQL encoding: utf_general_ci
 
 Instruction:
 1) import mySql database on server
