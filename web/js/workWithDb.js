@@ -121,7 +121,7 @@ function TaskToggle(id){
 function Down(id)
 {
     $.post('load/update-on-done', {'id':id});
-    $('div[class^=tasks] div.part-task div.marks input').attr('disabled','disabled');
+    $('div[class^=tasks'+id+'] div.part-task div.marks input').attr('disabled','disabled');
     $('.main-block+#cboxOverlay, .main-block+#cboxOverlay+#colorbox').remove();
     $('div[class^=tasks'+id+'] div.part-task div.task-option').toggle();
 }
