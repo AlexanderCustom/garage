@@ -38,7 +38,7 @@
                 <div class="tasks<?=$task['id']?>" onmouseover="ShowTaskOptions(<?=$task['id']?>);" onmouseout="HideTaskOptions(<?=$task['id']?>);"> <!--Блок списка заданий-->
                     <div class="part-task"> <!--Блок задания-->
                         <div class="marks"> <!--Блок метки-->
-                            <input  type="checkbox" onclick ="Down(<?=$task['id']?>);" name="mark" value="<?=$task['id']?>"/>
+                            <input  type="checkbox" onclick ="Down(<?=$task['id']?>);" name="mark" value="<?=$task['status']?>"/>
                         </div>
                         <div class="task-name"> <!--Блок имени-->
                             <?=$task['name']?>
